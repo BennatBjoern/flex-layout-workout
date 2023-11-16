@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 10px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+}
+
+header,
+main,
+section,
+aside,
+footer {
+  border-radius: 8px;
+  padding: 16px;
+}
+
+header {
+  background-color: red;
+  color: white;
+}
+
+main {
+  background-color: yellow;
+}
+
+aside {
+  background-color: cyan;
+  width: 480px;
+  line-height: 1.5rem;
+}
+
+aside code {
+  color: #00296b;
+  font-weight: bold;
+}
+
+.sections section {
+  background-color: green;
+  flex: 1;
+}
+
+.sections section:first-child {
+  background-color: gold;
+  flex: 2;
+}
+
+footer {
+  background-color: #390099;
+  color: white;
+}
